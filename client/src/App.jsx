@@ -1,14 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Home from './components/Home';
-import Profile from './components/Profile';
-import Signin from './components/Signin';
-import Signup from './components/Signup';
-import About from './components/About';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
+import About from './pages/About';
 import Header from './components/Header';
 function App() {
   return  <BrowserRouter>
+  <Header/>
    <Routes>
     <Route path='/' element={<Home />}/>
     <Route path='/about' element={<About />}/>
